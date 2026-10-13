@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+  <title>ТОК — аналитика магазина</title><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/dashboard.css"><link rel="stylesheet" href="/dashboard-plus.css">
+</head>
+<body class="dash-body">
+  <header class="dash-header"><a href="/" class="logo">ток<span>●</span></a><span>Панель владельца</span><nav><a href="/admin">Каталог</a><a href="/pos">POS</a><a href="/">Витрина ↗</a></nav></header>
+  <main class="dash-main">
+    <section id="dash-auth" class="dash-auth"><div class="dash-spinner"></div><h1>Собираем показатели…</h1></section>
+    <section id="dash-app" hidden>
+      <div class="dash-intro"><div><div class="eyebrow">МАГАЗИН В РЕАЛЬНОМ ВРЕМЕНИ</div><h1>Всё важное.<br><em>Без бумажной рутины.</em></h1></div><div class="dash-date"><span>Сегодня</span><strong id="today"></strong><button id="refresh-dashboard">Обновить данные ↻</button></div></div>
+      <div class="metric-grid" id="metric-grid"></div>
+      <div class="dash-grid">
+        <section class="dash-card revenue-card"><div class="card-head"><div><span>ДИНАМИКА</span><h2>Выручка за 7 дней</h2></div><strong id="week-total"></strong></div><div class="revenue-chart" id="revenue-chart"></div></section>
+        <section class="dash-card stock-card"><div class="card-head"><div><span>СКЛАД</span><h2>Критические остатки</h2></div><i class="alert-dot"></i></div><div id="low-stock"></div></section>
+        <section class="dash-card top-card"><div class="card-head"><div><span>ABC-АНАЛИЗ</span><h2>Лидеры продаж</h2></div></div><div id="top-products"></div></section>
+        <section class="dash-card recent-card"><div class="card-head"><div><span>ПОСЛЕДНИЕ ОПЕРАЦИИ</span><h2>Электронные чеки</h2></div></div><div id="recent-orders"></div></section>
+      </div>
+      <section class="data-architecture"><div><div class="eyebrow">ЕДИНАЯ АРХИТЕКТУРА</div><h2>6 связанных модулей<span>.</span></h2><p>Каталог, категории, клиенты, заказы, позиции чека и сотрудники работают как единая цифровая система.</p></div><div class="module-grid" id="module-grid"></div></section>
+      <section class="launch-track"><div class="eyebrow">ПЛАН ЗАПУСКА</div><h2>От данных до полной продажи<span>.</span></h2><div class="launch-steps"><article><b>01</b><h3>Каталог</h3><p>Заполнить реальные SKU, закупочные цены, остатки и фото.</p></article><article><b>02</b><h3>Лояльность</h3><p>Подключить SMS-подтверждение и правила кэшбэка.</p></article><article><b>03</b><h3>Касса</h3><p>Назначить PIN сотрудникам и проверить списание склада.</p></article><article><b>04</b><h3>QR-витрина</h3><p>Разместить прямые QR-коды у каждого товара.</p></article><article><b>05</b><h3>Контроль</h3><p>Провести сквозной тест и подключить фискализацию.</p></article></div></section>
+    </section>
+  </main>
+  <div class="toast" id="dash-toast" role="status" aria-live="polite"></div><script src="/dashboard.js" defer></script>
+</body></html>

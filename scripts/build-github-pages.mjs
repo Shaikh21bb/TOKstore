@@ -13,6 +13,8 @@ await cp(join(root, 'public'), output, { recursive: true });
 let html = await readFile(join(root, 'web', 'index.html'), 'utf8');
 html = html
   .replace('href="/admin"', `href="${hostedSite}/admin"`)
+  .replaceAll('href="/pos"', `href="${hostedSite}/pos"`)
+  .replaceAll('href="/dashboard"', `href="${hostedSite}/dashboard"`)
   .replace(
     '</head>',
     `<link rel="canonical" href="${hostedSite}/">\n</head>`,
@@ -32,12 +34,23 @@ app = app
   .replace(
     "fetch('/api/catalog',{cache:'no-store'})",
     "fetch('catalog.json',{cache:'no-store'})",
-  );
+  )
+  .replace("navigator.serviceWorker.register('/sw.js')", "navigator.serviceWorker.register('sw.js')");
 
 if (!app.includes("fetch('catalog.json',{cache:'no-store'})")) {
   throw new Error('GitHub Pages catalog adaptation was not applied');
 }
 await writeFile(appPath, app);
+const manifestPath = join(output, 'manifest.webmanifest');
+const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
+manifest.start_url = './';
+manifest.scope = './';
+manifest.icons = manifest.icons.map((icon) => ({ ...icon, src: icon.src.replace(/^\//, '') }));
+manifest.shortcuts = manifest.shortcuts.map((shortcut) => ({ ...shortcut, url: shortcut.url.startsWith('/') ? hostedSite + shortcut.url : shortcut.url }));
+await writeFile(manifestPath, JSON.stringify(manifest, null, 2));
+const swPath = join(output, 'sw.js');
+const sw = (await readFile(swPath, 'utf8')).replace("const CORE=['/','/style.css','/store-plus.css','/app.js','/manifest.webmanifest','/assets/favicon.svg','/assets/hero.svg'];", "const CORE=['./','style.css','store-plus.css','app.js','manifest.webmanifest','assets/favicon.svg','assets/hero.svg'];");
+await writeFile(swPath, sw);
 await writeFile(join(output, '.nojekyll'), '');
 
 console.log(`GitHub Pages bundle created at ${output}`);

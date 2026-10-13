@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#17201b">
+  <title>ТОК POS — касса без бумаги</title>
+  <link rel="icon" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/pos.css">
+</head>
+<body class="pos-body">
+  <section class="pin-screen" id="pin-screen">
+    <a class="logo pos-logo" href="/">ток<span>●</span></a>
+    <div class="pin-card">
+      <div class="pos-kicker">МОБИЛЬНОЕ РАБОЧЕЕ МЕСТО</div>
+      <h1>Касса.<br><em>Без бумаги.</em></h1>
+      <p>Войди по PIN сотрудника, отсканируй товар и проведи демонстрационную продажу.</p>
+      <form id="pin-form">
+        <label>PIN сотрудника<input name="pin" type="password" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="one-time-code" placeholder="••••" required></label>
+        <button class="pos-primary" type="submit">Открыть смену <span>→</span></button>
+      </form>
+      <p class="pin-note">Демо PIN: <strong>1234</strong>. Перед реальными продажами задайте секретный <code>STAFF_PIN</code>.</p>
+      <p class="pos-error" id="pin-error" hidden></p>
+    </div>
+  </section>
+
+  <div id="pos-app" hidden>
+    <header class="pos-header">
+      <a class="logo pos-logo" href="/">ток<span>●</span></a>
+      <div class="pos-mode"><i></i><span>POS / смена открыта</span></div>
+      <div class="pos-staff"><span id="staff-name">Продавец</span><button id="logout">Выйти</button></div>
+    </header>
+    <main class="pos-layout">
+      <section class="pos-catalog">
+        <div class="pos-title-row"><div><div class="pos-kicker">НОВАЯ ПРОДАЖА</div><h2>Добавьте товары<span>.</span></h2></div><span id="stock-summary"></span></div>
+        <div class="scan-bar">
+          <label><span>⌕</span><input id="pos-search" type="search" placeholder="Название, артикул или модель" aria-label="Поиск товара"></label>
+          <button id="camera-button" class="scan-button">▣ Сканировать QR</button>
+        </div>
+        <div class="pos-products" id="pos-products"></div>
+        <div class="pos-empty" id="pos-empty" hidden>Ничего не найдено. Проверьте запрос.</div>
+      </section>
+
+      <aside class="receipt-panel">
+        <div class="receipt-head"><div><div class="pos-kicker">ТЕКУЩИЙ ЧЕК</div><h2>Продажа<span>.</span></h2></div><button id="clear-sale">Очистить</button></div>
+        <div id="receipt-items" class="receipt-items"></div>
+        <div id="receipt-empty" class="receipt-empty"><span>＋</span><p>Нажмите на товар<br>или отсканируйте QR</p></div>
+        <div class="client-box">
+          <div class="client-title"><span>Карта клиента</span><small>необязательно</small></div>
+          <form id="client-form"><input name="phone" type="tel" placeholder="Телефон клиента"><button type="submit">Найти</button></form>
+          <div id="client-result" hidden></div>
+        </div>
+        <div class="bonus-row" id="bonus-row" hidden><label>Списать бонусы<input id="bonus-input" type="number" min="0" step="1" value="0"></label><small id="bonus-limit"></small></div>
+        <div class="payment-methods" role="group" aria-label="Способ оплаты">
+          <button class="active" data-payment="card">Картой</button><button data-payment="cash">Наличные</button><button data-payment="mixed">Смешанная</button>
+        </div>
+        <div id="receipt-totals" class="receipt-totals"></div>
+        <p class="pos-error" id="sale-error" hidden></p>
+        <button class="complete-sale" id="complete-sale" disabled>Провести продажу <span>→</span></button>
+        <p class="fiscal-note">Демо: продажа записывается в систему, но фискальный чек и банковский платёж не создаются.</p>
+      </aside>
+    </main>
+  </div>
+
+  <dialog id="scan-dialog" class="scan-dialog"><button class="close" data-close="scan-dialog" aria-label="Закрыть">×</button><div class="pos-kicker">СКАНЕР</div><h2>Наведите на QR-код</h2><video id="scan-video" playsinline muted></video><p id="scan-status">Запрашиваем камеру…</p><label>Или введите артикул<input id="scan-manual" placeholder="iphone-16"><button id="scan-add">Добавить</button></label></dialog>
+  <dialog id="sale-dialog" class="sale-dialog"><button class="close" data-close="sale-dialog" aria-label="Закрыть">×</button><div id="sale-result"></div></dialog>
+  <div class="toast" id="pos-toast" role="status" aria-live="polite"></div>
+  <script src="/pos.js" defer></script>
+</body>
+</html>
