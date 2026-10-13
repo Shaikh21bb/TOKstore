@@ -1,5 +1,5 @@
 'use strict';
-const $=s=>document.querySelector(s),money=n=>new Intl.NumberFormat('ru-RU').format(n)+' ₽',escapeHTML=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const $=s=>document.querySelector(s),money=n=>new Intl.NumberFormat('ru-KZ').format(n)+' ₸',escapeHTML=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const categories={phones:'Смартфоны',cases:'Чехлы',charging:'Зарядки и кабели',audio:'Наушники',other:'Полезные мелочи'};
 let products=[],editing=null,deleting=null,imageValue='',timer,lastFocus;
 function toast(text){$('#toast').textContent=text;$('#toast').classList.add('visible');clearTimeout(timer);timer=setTimeout(()=>$('#toast').classList.remove('visible'),3000)}
