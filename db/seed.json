@@ -1,0 +1,470 @@
+[
+  {
+    "id": "iphone-16",
+    "name": "Apple iPhone 16",
+    "brand": "Apple",
+    "model": "iPhone 16",
+    "price": 79990,
+    "old": 84990,
+    "color": "Ультрамарин · 128 ГБ",
+    "image": "assets/iphone-blue.svg",
+    "badge": "Бестселлер",
+    "colors": [
+      "#6674b3"
+    ],
+    "desc": "Универсальный iPhone для фото, видео и повседневных задач. Демонстрационная карточка: комплектацию и условия гарантии нужно уточнить перед продажей.",
+    "specs": {
+      "Экран": "6,1″ OLED",
+      "Память": "128 ГБ",
+      "Процессор": "Apple A18",
+      "Камера": "48 Мп + 12 Мп"
+    },
+    "rank": 1,
+    "category": "phones",
+    "stock": 8,
+    "published": true
+  },
+  {
+    "id": "galaxy-s24",
+    "name": "Samsung Galaxy S24",
+    "brand": "Samsung",
+    "model": "Galaxy S24",
+    "price": 64990,
+    "old": 69990,
+    "color": "Мраморный серый · 256 ГБ",
+    "image": "assets/samsung-gray.svg",
+    "badge": "Выбор ТОК",
+    "colors": [
+      "#9ca1a4"
+    ],
+    "desc": "Компактный флагман Galaxy с ярким экраном и тройной камерой. Пример товара для знакомства с каталогом.",
+    "specs": {
+      "Экран": "6,2″ AMOLED, 120 Гц",
+      "Память": "256 ГБ",
+      "Камера": "50 Мп + 12 Мп + 10 Мп",
+      "Аккумулятор": "4000 мА·ч"
+    },
+    "rank": 2,
+    "category": "phones",
+    "stock": 8,
+    "published": true
+  },
+  {
+    "id": "iphone-15-pro",
+    "name": "Apple iPhone 15 Pro",
+    "brand": "Apple",
+    "model": "iPhone 15 Pro",
+    "price": 89990,
+    "color": "Натуральный титан · 256 ГБ",
+    "image": "assets/iphone-titanium.svg",
+    "colors": [
+      "#9b9990"
+    ],
+    "desc": "Титановый корпус, плавный экран ProMotion и система камер Pro. Демонстрационный ассортимент.",
+    "specs": {
+      "Экран": "6,1″ OLED, 120 Гц",
+      "Память": "256 ГБ",
+      "Процессор": "Apple A17 Pro",
+      "Камера": "48 Мп + 12 Мп + 12 Мп"
+    },
+    "rank": 3,
+    "category": "phones",
+    "stock": 8,
+    "published": true
+  },
+  {
+    "id": "galaxy-s24-ultra",
+    "name": "Samsung Galaxy S24 Ultra",
+    "brand": "Samsung",
+    "model": "Galaxy S24 Ultra",
+    "price": 109990,
+    "color": "Титановый чёрный · 256 ГБ",
+    "image": "assets/samsung-black.svg",
+    "badge": "Флагман",
+    "colors": [
+      "#4c5155"
+    ],
+    "desc": "Большой экран, камера 200 Мп и встроенный S Pen для заметок и творчества. Демонстрационная карточка.",
+    "specs": {
+      "Экран": "6,8″ AMOLED, 120 Гц",
+      "Память": "256 ГБ",
+      "Процессор": "Snapdragon 8 Gen 3",
+      "Камера": "200 Мп"
+    },
+    "rank": 4,
+    "category": "phones",
+    "stock": 8,
+    "published": true
+  },
+  {
+    "id": "xiaomi-14",
+    "name": "Xiaomi 14",
+    "brand": "Xiaomi",
+    "model": "Xiaomi 14",
+    "price": 59990,
+    "color": "Нефритовый · 256 ГБ",
+    "image": "assets/xiaomi-green.svg",
+    "colors": [
+      "#689a8c"
+    ],
+    "desc": "Мощный компактный смартфон с камерой Leica и быстрой зарядкой. Пример товара; характеристики можно редактировать в админ-панели.",
+    "specs": {
+      "Экран": "6,36″ AMOLED, 120 Гц",
+      "Память": "256 ГБ",
+      "Процессор": "Snapdragon 8 Gen 3",
+      "Аккумулятор": "4610 мА·ч"
+    },
+    "rank": 5,
+    "category": "phones",
+    "stock": 8,
+    "published": true
+  },
+  {
+    "id": "pixel-9",
+    "name": "Google Pixel 9",
+    "brand": "Google",
+    "model": "Pixel 9",
+    "price": 69990,
+    "color": "Фарфор · 128 ГБ",
+    "image": "assets/pixel-ivory.svg",
+    "colors": [
+      "#dedcd4"
+    ],
+    "desc": "Смартфон Google с чистым Android, ярким экраном и удобными инструментами для фото. Демонстрационный товар.",
+    "specs": {
+      "Экран": "6,3″ OLED, 120 Гц",
+      "Память": "128 ГБ",
+      "Процессор": "Google Tensor G4",
+      "Камера": "50 Мп + 48 Мп"
+    },
+    "rank": 6,
+    "category": "phones",
+    "stock": 8,
+    "published": true
+  },
+  {
+    "id": "galaxy-a55",
+    "name": "Samsung Galaxy A55",
+    "brand": "Samsung",
+    "model": "Galaxy A55",
+    "price": 34990,
+    "color": "Тёмно-синий · 128 ГБ",
+    "image": "assets/samsung-blue.svg",
+    "badge": "На каждый день",
+    "colors": [
+      "#384959"
+    ],
+    "desc": "Практичный Galaxy с большим экраном и ёмким аккумулятором. Демонстрационный ассортимент магазина.",
+    "specs": {
+      "Экран": "6,6″ AMOLED, 120 Гц",
+      "Память": "128 ГБ",
+      "Процессор": "Exynos 1480",
+      "Аккумулятор": "5000 мА·ч"
+    },
+    "rank": 7,
+    "category": "phones",
+    "stock": 8,
+    "published": true
+  },
+  {
+    "id": "redmi-note-13",
+    "name": "Xiaomi Redmi Note 13",
+    "brand": "Xiaomi",
+    "model": "Redmi Note 13",
+    "price": 19990,
+    "color": "Чёрный · 128 ГБ",
+    "image": "assets/xiaomi-black.svg",
+    "colors": [
+      "#3e4446"
+    ],
+    "desc": "Доступный смартфон с AMOLED-экраном для общения, видео и ежедневных задач. Пример товара.",
+    "specs": {
+      "Экран": "6,67″ AMOLED, 120 Гц",
+      "Память": "128 ГБ",
+      "Камера": "108 Мп",
+      "Аккумулятор": "5000 мА·ч"
+    },
+    "rank": 8,
+    "category": "phones",
+    "stock": 8,
+    "published": true
+  },
+  {
+    "id": "case-sage",
+    "name": "Силиконовый чехол Soft",
+    "category": "cases",
+    "model": "iPhone 15",
+    "price": 1290,
+    "old": 1590,
+    "color": "Шалфей",
+    "image": "assets/case-sage.svg",
+    "badge": "Бестселлер",
+    "colors": [
+      "#899885",
+      "#d8c7b6",
+      "#313936"
+    ],
+    "desc": "Мягкий снаружи, бережный внутри. Матовый силикон, подкладка из микрофибры и приподнятые края вокруг камеры.",
+    "specs": {
+      "Материал": "Силикон, микрофибра",
+      "Совместимость": "iPhone 15",
+      "Особенность": "Защита камеры"
+    },
+    "rank": 9,
+    "brand": "ТОК",
+    "stock": 20,
+    "published": true
+  },
+  {
+    "id": "charger",
+    "name": "Зарядное устройство 30W",
+    "category": "charging",
+    "model": "universal",
+    "price": 1790,
+    "color": "Молочный",
+    "image": "assets/charger.svg",
+    "badge": "Быстрый заряд",
+    "colors": [
+      "#eeeae2"
+    ],
+    "desc": "Компактный адаптер с USB-C для телефона, планшета и наушников. Поддерживает Power Delivery до 30 Вт.",
+    "specs": {
+      "Разъём": "USB-C",
+      "Мощность": "До 30 Вт",
+      "В комплекте": "Адаптер без кабеля"
+    },
+    "rank": 10,
+    "brand": "ТОК",
+    "stock": 20,
+    "published": true
+  },
+  {
+    "id": "buds",
+    "name": "Беспроводные наушники Air",
+    "category": "audio",
+    "model": "universal",
+    "price": 3490,
+    "old": 3990,
+    "color": "Молочный",
+    "image": "assets/buds.svg",
+    "badge": "Выбор ТОК",
+    "colors": [
+      "#eeeae2",
+      "#313936"
+    ],
+    "desc": "Любимые треки, звонки и прогулки без проводов. Лёгкие наушники с зарядным кейсом.",
+    "specs": {
+      "Подключение": "Bluetooth 5.3",
+      "Работа с кейсом": "До 24 часов",
+      "Зарядка": "USB-C"
+    },
+    "rank": 11,
+    "brand": "ТОК",
+    "stock": 20,
+    "published": true
+  },
+  {
+    "id": "cable",
+    "name": "Кабель USB-C → USB-C",
+    "category": "charging",
+    "model": "universal",
+    "price": 690,
+    "color": "Песочный · 1 м",
+    "image": "assets/cable.svg",
+    "colors": [
+      "#c9bca4",
+      "#313936"
+    ],
+    "desc": "Гибкий кабель в тканевой оплётке для зарядки и передачи данных. Подходит устройствам с USB-C.",
+    "specs": {
+      "Длина": "1 метр",
+      "Мощность": "До 60 Вт",
+      "Разъёмы": "USB-C / USB-C"
+    },
+    "rank": 12,
+    "brand": "ТОК",
+    "stock": 20,
+    "published": true
+  },
+  {
+    "id": "case-orange",
+    "name": "Силиконовый чехол Soft",
+    "category": "cases",
+    "model": "iPhone 16",
+    "price": 1390,
+    "color": "Терракота",
+    "image": "assets/case-orange.svg",
+    "badge": "Новинка",
+    "colors": [
+      "#c36e50",
+      "#899885"
+    ],
+    "desc": "Тёплый оттенок и приятная матовая поверхность. Защищает корпус и добавляет цвет в каждый день.",
+    "specs": {
+      "Материал": "Силикон, микрофибра",
+      "Совместимость": "iPhone 16",
+      "Особенность": "Защита камеры"
+    },
+    "rank": 13,
+    "brand": "ТОК",
+    "stock": 20,
+    "published": true
+  },
+  {
+    "id": "powerbank",
+    "name": "Повербанк Pocket 10 000",
+    "category": "charging",
+    "model": "universal",
+    "price": 2490,
+    "color": "Графит",
+    "image": "assets/powerbank.svg",
+    "colors": [
+      "#424a43"
+    ],
+    "desc": "Запас энергии, который помещается в сумку. Заряжай смартфон в дороге через USB-C.",
+    "specs": {
+      "Ёмкость": "10 000 мА·ч",
+      "Выходная мощность": "До 20 Вт",
+      "Разъёмы": "USB-C, USB-A"
+    },
+    "rank": 14,
+    "brand": "ТОК",
+    "stock": 20,
+    "published": true
+  },
+  {
+    "id": "stand",
+    "name": "Подставка Fold",
+    "category": "other",
+    "model": "universal",
+    "price": 990,
+    "color": "Серебристый",
+    "image": "assets/stand.svg",
+    "colors": [
+      "#c2c6c1"
+    ],
+    "desc": "Для видеозвонков, рецептов и любимых видео. Складная конструкция и регулируемый угол наклона.",
+    "specs": {
+      "Материал": "Алюминий",
+      "Устройства": "Смартфоны 4–7 дюймов",
+      "Особенность": "Складная"
+    },
+    "rank": 15,
+    "brand": "ТОК",
+    "stock": 20,
+    "published": true
+  },
+  {
+    "id": "glass",
+    "name": "Защитное стекло Clear",
+    "category": "other",
+    "model": "iPhone 15",
+    "price": 590,
+    "color": "Прозрачный",
+    "image": "assets/glass.svg",
+    "badge": "Базовая защита",
+    "colors": [
+      "#dde7e6"
+    ],
+    "desc": "Прозрачная защита экрана от повседневных царапин. Олеофобное покрытие и салфетки в комплекте.",
+    "specs": {
+      "Совместимость": "iPhone 15",
+      "Толщина": "0,3 мм",
+      "В комплекте": "Стекло и салфетки"
+    },
+    "rank": 16,
+    "brand": "ТОК",
+    "stock": 20,
+    "published": true
+  },
+  {
+    "id": "case-black",
+    "name": "Чехол Everyday",
+    "category": "cases",
+    "model": "Galaxy S24",
+    "price": 1190,
+    "color": "Графит",
+    "image": "assets/case-black.svg",
+    "colors": [
+      "#3c4642"
+    ],
+    "desc": "Лаконичный чехол с точными вырезами и удобными кнопками. Для спокойного повседневного стиля.",
+    "specs": {
+      "Материал": "Термополиуретан",
+      "Совместимость": "Samsung Galaxy S24",
+      "Особенность": "Матовая поверхность"
+    },
+    "rank": 17,
+    "brand": "ТОК",
+    "stock": 20,
+    "published": true
+  },
+  {
+    "id": "wireless",
+    "name": "Беспроводная зарядка Circle",
+    "category": "charging",
+    "model": "universal",
+    "price": 1990,
+    "color": "Молочный",
+    "image": "assets/wireless.svg",
+    "colors": [
+      "#eeeae2"
+    ],
+    "desc": "Положи смартфон на площадку и продолжай свой день. Для устройств с поддержкой беспроводной зарядки Qi.",
+    "specs": {
+      "Стандарт": "Qi",
+      "Мощность": "До 15 Вт",
+      "В комплекте": "Площадка и кабель"
+    },
+    "rank": 18,
+    "brand": "ТОК",
+    "stock": 20,
+    "published": true
+  },
+  {
+    "id": "headphones",
+    "name": "Наушники Studio",
+    "category": "audio",
+    "model": "universal",
+    "price": 4990,
+    "color": "Графит",
+    "image": "assets/headphones.svg",
+    "badge": "Для твоих треков",
+    "colors": [
+      "#424a43"
+    ],
+    "desc": "Полноразмерные беспроводные наушники с мягкими амбушюрами для музыки, работы и поездок.",
+    "specs": {
+      "Подключение": "Bluetooth 5.3",
+      "Время работы": "До 35 часов",
+      "Зарядка": "USB-C"
+    },
+    "rank": 19,
+    "brand": "ТОК",
+    "stock": 20,
+    "published": true
+  },
+  {
+    "id": "strap",
+    "name": "Ремешок Loop",
+    "category": "other",
+    "model": "universal",
+    "price": 490,
+    "color": "Оливковый",
+    "image": "assets/strap.svg",
+    "colors": [
+      "#899885",
+      "#c9bca4"
+    ],
+    "desc": "Держи телефон ближе. Тканевый ремешок на запястье с креплением для совместимых чехлов.",
+    "specs": {
+      "Материал": "Полиэстер",
+      "Длина": "20 см",
+      "Крепление": "Вставка под чехол"
+    },
+    "rank": 20,
+    "brand": "ТОК",
+    "stock": 20,
+    "published": true
+  }
+]

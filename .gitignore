@@ -1,3 +1,12 @@
 node_modules/
 *.tar.gz
 .DS_Store
+dist/
+.wrangler/
+.vinext/
+.sites-runtime/
+.env*
+
+.dev.vars*
+
+.next/
